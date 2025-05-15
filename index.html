@@ -220,7 +220,7 @@
             <h2 class="title is-3">Introduction</h2>
             <div class="content has-text-justified">
               <p>
-                we introduce <b>MMOral</b>, the first large-scale multimodal instruction dataset and benchmark tailored for panoramic X-ray understanding. MMOral comprises <b>20,563</b> annotated panoramic X-rays paired with <b>1.3 million</b> instruction-following instances, spanning multiple task formats including attribute extraction, report generation, visual question answering, and image-grounded dialogue. Complementing the dataset, <b>MMOral-Bench</b> offers a curated evaluation suite covering five key diagnostic dimensions, including condition of teeth, pathological findings, historical treatments, jawbone observations, and clinical summary \& recommendations. This benchmark consists of 100 images with 1,100 QA pairs, including 500 closed-ended and 600 open-ended questions. All cases in MMOral-Bench are manually chosen and checked from the MMOral to ensure their quality and reliability. Together, MMOral and MMOral-Bench lay a critical foundation for advancing intelligent dentistry and enabling clinically meaningful multimodal AI.
+                we introduce <b>MMOral</b>, the first large-scale multimodal instruction dataset and benchmark tailored for panoramic X-ray understanding. MMOral comprises <b>20,563</b> annotated panoramic X-rays paired with <b>1.3 million</b> instruction-following instances, spanning multiple task formats including attribute extraction, report generation, visual question answering, and image-grounded dialogue. Complementing the dataset, <b>MMOral-Bench</b> offers a curated evaluation suite covering five key diagnostic dimensions, including condition of teeth, pathological findings, historical treatments, jawbone observations, and clinical summary & recommendations. This benchmark consists of 100 images with 1,100 QA pairs, including 500 closed-ended and 600 open-ended questions. All cases in MMOral-Bench are manually chosen and checked from the MMOral to ensure their quality and reliability. Together, MMOral and MMOral-Bench lay a critical foundation for advancing intelligent dentistry and enabling clinically meaningful multimodal AI.
               </p>
             </div>
           </div>
@@ -229,12 +229,33 @@
     </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">MMOral Curation</h2>
+            <div class="content has-text-justified">
+              <p>
+                The curation pipeline of the MMOral dataset consists of four sequential steps, as outlined below:
+              </p>
+              <img src="static/images/2_pipeline.png" alt="algebraic reasoning" class="center">
+              <br>
+              <p>
+                 MMMU is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
+              </p>
+              <p>
+                Our MMMU benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model's adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+
     <!-- DATASET SECTION -->
     <section class="hero is-light is-small">
       <div class="hero-body has-text-centered">
         <h1 class="title is-1 mmmu">
           <img src="static/images/mmoral-logo.png" alt="Logo" class="mmmu-logo"/>
-          <span class="mmmu">MMMU Benchmark</span>
+          <span class="mmmu">MMOral-Bench</span>
         </h1>
       </div>
     </section>
